@@ -1,0 +1,12 @@
+#!name=51猎奇
+#!desc=解锁金币视频
+#!system=ios
+
+[URL Rewrite]
+^https?:\/\/.*\.longyuandingyi\.com\/ https://long.longyuandingyi.com/ 302
+
+[Map Local]
+^http[s]?:\/\/long.(fuhuida|riyufanyi|longyuandingyi).*\/(videos.|watch|static|upload|watch[0-9]+)\/.*\/.*\.m3u8\?auth_key.*$ data="https://fk.gjds.vip/51lq.js"
+
+[MITM]
+hostname = %APPEND% *rhrbrbb*,*riyufanyi*,*50*, *
