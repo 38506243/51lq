@@ -5,8 +5,8 @@
 [URL Rewrite]
 ^https?:\/\/.*\.longyuandingyi\.com\/ https://long.longyuandingyi.com/ 302
 
-[Map Local]
-^http[s]?:\/\/long.(fuhuida|riyufanyi|longyuandingyi).*\/(videos.|watch|static|upload|watch[0-9]+)\/.*\/.*\.m3u8\?auth_key.*$ data="https://fk.gjds.vip/51lq.js"
+[Script]
+51猎奇 = type=http-response,requires-body=1,timeout=10,pattern=^http[s]?:\/\/long.(fuhuida|riyufanyi|longyuandingyi).*\/(videos.|watch|static|upload|watch[0-9]+)\/.*\/.*\.m3u8\?auth_key.*$,script-path=https://fk.gjds.vip/51lq.js
 
 [MITM]
 hostname = %APPEND% *rhrbrbb*,*riyufanyi*,*50*, *
